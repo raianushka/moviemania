@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script href="myjQuery.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Practice-jQuery</title>
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div class="preloader">
+    <div class="loader">
+    </div>
+</div>
+<!-- preloader ends here -->
+
+<!-- head section starts -->
+<header class="header">
+    <div class="container">
+        <div style="justify-content: space-between; align-items: center;" 
+        class="row">
+            <div class="brand-name">
+                <a href="index.html">Movie Mania</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+            </div>
+            <nav class="nav">
+                <ul">
+                    <li href="#home">Home</li>
+                    <li href="#about">About</li>
+                    <li href="#categories">Categories</li>
+                    <li href="#top">Top-Rated</li>
+                    <li href="#contact">Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- Header ends here -->
+
+<!-- Home Section starts here  -->
+<section class="home-section" id="home">
+    <!-- shape -->
+    <div class="shape-01">
+
+    </div>
+    <div class="container">
+        <div class="row" style="align-items: center;">
+            <div class="home-content">
+                <h4>Download your favourite Movie in just a click</h4>
+                <h2>Welcome to Movie Mania</h2>
+            </div>
+        </div>
+        <!-- Scroll Down -->
+        <a href="#about" class="scroll-down">
+            <img src="../images/downArrow.svg" alt="Scroll Down"/>
+        </a>
+    </div>
+    
+</section>
+<!-- Home section ends here -->
+
+<!-- About section starts here -->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="img-box">
+                <div class="shape-02">
+                    <img src="../images/about.svg" alt="Clapper Board"/>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="row">
+                    <div class="section-title">
+                        <h1>About Us</h1>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio architecto ducimus sit sint ea. Quod ea sequi ab id expedita ipsa praesentium consectetur odio, laborum modi saepe pariatur dolorem optio hic? Modi earum veritatis reiciendis quibusdam ea, cupiditate reprehenderit amet inventore nemo fuga deserunt, pariatur assumenda? Laboriosam, iste maxime iure voluptates eveniet rem placeat debitis asperiores quo, possimus sint in doloribus pariatur consectetur fugiat repellendus et nihil. Nesciunt maiores sequi consequatur necessitatibus, quo voluptas temporibus dignissimos voluptates debitis adipisci assumenda cum quos modi magnam impedit laboriosam repudiandae, nihil quas, recusandae ab sit. Harum provident voluptatem tempora veritatis quibusdam ipsa eaque?
+                </p>
+                <div class="stats">
+                    <div class="row">
+                        <div class="stat-box">
+                            <h2>150k+</h2>
+                            <h5>Daily Downloads</h5>
+                        </div>
+                        <div class="stat-box">
+                            <h2>2500+</h2>
+                            <h5>Movies Available</h5>
+                        </div>
+                        <div class="stat-box">
+                            <h2>1M+</h2>
+                            <h5>Happy Clients</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Button  -->
+                <a href="#contact" class="btn btn-01"> Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About section ends here -->
+
+<!-- Categories section starts here  -->
+<section class="service section" id="categories">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1>Categories</h1>
+            </div>
+        </div>
+        <div class="row">
+            <!-- categories start -->
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <img src="../images/service/1.jpg" alt="Western Movies" loading="lazy"/>
+                    <div class="overlay">
+                        <h3>Western</h3>
+                    </div>
+                </div>
+                <div class="service-item-inner">
+                    <img src="../images/service/2.jpg" alt="Mystery Movies" loading="lazy"/>
+                    <div class="overlay">
+                        <h3>Mystery</h3>
+                    </div>
+                </div>
+                <div class="service-item-inner">
+                    <img src="../images/service/3.jpg" alt="Drama Movies" loading="lazy"/>
+                    <div class="overlay">
+                        <h3>Drama</h3>
+                    </div>
+                </div>
+                <div class="service-item-inner">
+                    <img src="../images/service/4.jpg" alt="Fantasy Movies" loading="lazy"/>
+                    <div class="overlay">
+                        <h3>Fantasy</h3>
+                    </div>
+                </div>
+                <div class="service-item-inner">
+                    <img src="../images/service/5.jpg" alt="Comedy Movies" loading="lazy"/>
+                    <div class="overlay">
+                        <h3>Comedy</h3>
+                    </div>
+                </div>
+                <div class="service-item-inner">
+                    <img src="../images/service/6.jpg" alt="Animation Movies" loading="lazy"/>
+                    <div class="overlay">
+                        <h3>Animation</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- categories end here  -->
+        </div>
+    </div>
+</section>
+<!-- Category Section ends here  -->
+
+<!-- Top-rated section start  -->
+<section id="top" class="work section">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1>Top-Rated Movies</h1>
+            </div>
+        </div>
+        <div class="row">
+            <!-- top rated movies start  -->
+            <div class="work-item">
+                <div class="work-item-inner">
+                    <img src="../images/works/1.jpg" alt="Movie 1" loading="lazy">
+                    <div class="overlay">
+                        <h4>Avengers: Endgame</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-item-inner">
+                    <img src="../images/works/2.jpg" alt="Movie 2" loading="lazy">
+                    <div class="overlay">
+                        <h4>Justice League</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-item-inner">
+                    <img src="../images/works/3.jpg" alt="Movie 3" loading="lazy">
+                    <div class="overlay">
+                        <h4>Deadpool</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-item-inner">
+                    <img src="../images/works/4.jpg" alt="Movie 4" loading="lazy">
+                    <div class="overlay">
+                        <h4>Wonder Woman</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-item-inner">
+                    <img src="../images/works/5.jpg" alt="Movie 5" loading="lazy">
+                    <div class="overlay">
+                        <h4>Captain Marvel</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-item-inner">
+                    <img src="../images/works/6.jpg" alt="Movie 6" loading="lazy">
+                    <div class="overlay">
+                        <h4>Aquaman</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Top-rated section end-->
+
+<!-- Contact section starts here  -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div  class="row">
+            <div class="img-box">
+                <div class="section-title">
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <form action="" class="form">
+            <div class="row">
+                <div class="left input-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your Name here" class="input-control">
+                </div>
+                <div class="right input-group">
+                    <label>Email or Phone</label>
+                    <input type="text" placeholder="Your Email or Phone here" class="input-control">
+                </div>
+            </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea class="input-control" placeholder="Your message here"></textarea>
+                    </div>
+                </div>
+                <div class="form-btn">
+                    <button type="button" class="btn btn-01" id="button"> Send Message </button>
+                </div>
+                <div id="dialog">
+                    Thankyou for contacting us. We'll get back to you. Don't forget to check your email.
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="contact-info">
+            <div class="row">
+                <div class="info-item">
+                    <h5>Address</h5>
+                    <p>Sec-12, USA, 12111</p>
+                </div>
+                <div class="info-item">
+                    <h5>Phone</h5>
+                    <p>91 52638 45632</p>
+                </div>
+                <div class="info-item">
+                    <h5>Email</h5>
+                    <p>moviemania@movie.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="social-links">
+            <a href="#" title="facebook">
+                <img src="../images/icons/facebook.svg" alt="facebook">
+            </a>
+            <a href="#" title="instagram">
+                <img src="../images/icons/instagram.svg" alt="instagram">
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Contact section ends here  -->
+<p class="copyright">&copy; 2022 Movie Mania</p>
+
+<!-- light box start  -->
+<div class="lightbox">
+    <div class="img-box">
+        <div class="lightbox-class">&times;</div>
+        <img src="../images/works/2.jpg" class="lightbox-img" alt="img1">
+        <div class="lightbox-caption">
+            <div class="lightbox-category">
+
+            </div>
+            <div class="lightbox-counter">
+
+            </div>
+        </div>
+        <div class="lightbox-controls">
+            <div class="prev">
+                <img src="../images/icons/prev.svg" alt="previous">
+            </div>
+            <div class="next">
+                <img src="../images/icons/next.svg" alt="next">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- lightbox ends here  -->
+</body>
+</html>
