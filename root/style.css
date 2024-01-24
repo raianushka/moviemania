@@ -129,15 +129,15 @@ header{
   transition: all 0.5s ease;
 }
 
-header .fixed{
+/* header .fixed{
   background-color: #fff;
-}
+} */
 
 header .brand-name{
   padding: 0 15px;
 }
 
-.header .brand-name a{
+header .brand-name a{
   text-decoration: none;
   font-size: 30px;
   color: #fff;
@@ -185,9 +185,8 @@ header .nav-toggle span::after{
   height: 1px;
   width: 100%;
   background-color: #fff;
-  transition: all 0.5s ease;;
+  transition: all 0.5s ease;
 }
-
 header .fixed .nav-toggle span,
 header .fixed .nav-toggle::before,
 header .fixed .nav-toggle::after{
@@ -200,7 +199,7 @@ header .nav-toggle span::before{
 
 header .nav-toggle span::after{
   transform: translate(6px);
-}
+} 
 
 header nav{
   padding: 0 15px;
@@ -217,7 +216,7 @@ header nav ul{
 
 header nav ul li{
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 28px;
 }
 
 header nav ul li a{
@@ -225,7 +224,7 @@ header nav ul li a{
   font-size: 16px;
   font-weight: 600;
   color: #fff;
-  padding: 25px;
+  padding: 24px;
   display: block;
   transition: all 0.5s ease;
 }
@@ -237,6 +236,10 @@ header .fixed nav ul li a{
 header .fixed nav ul li a:hover{
   color: #ff9800;
 }
+header nav ul li a:hover{
+  color: #ff9800;
+}
+
 
 
 /* Home Section  */
@@ -320,7 +323,7 @@ header .fixed nav ul li a:hover{
   }
 }
 
-.home-section.scroll-down img{
+.home-section .scroll-down img{
   width: 25px;
   display: block;
   margin: 2px auto;
@@ -407,18 +410,24 @@ header .fixed nav ul li a:hover{
 }
 
 .service-section .service-item{
-  flex: 0 0 33.3%;
-  max-width: 33.33%;
-  padding: 15px;
+  padding: 16px;
+  display: flex; 
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  flex: 0 0 100%;
+  justify-content: center;
 }
 
 .service-section .service-item-inner{
   position: relative;
   overflow:hidden;
+  width:30%
 }
 
 .service-section .service-item-inner img{
   width: 100%;
+  height: auto;
   display: block;
   filter: grayscale(100%);
   transition: all 0.5s ease;
@@ -464,10 +473,12 @@ header .fixed nav ul li a:hover{
 
 .work-section .row .work-item{
   display: flex;
-  flex: 0 0 33%;
+  flex: 0 0 100%;
   max-width: 100%;
   flex-wrap: wrap;
-  padding: 15px;
+  padding: 16px;
+  gap: 12px;
+  justify-content: center;
 }
 
 .work-section .work-item .work-item-inner img{
@@ -650,18 +661,13 @@ header .fixed nav ul li a:hover{
 }
 
 .contact-section .form{
-  flex: 0 0 100%;
-  max-width: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 0 65px;
   background-color: #f3f2f1;
   padding: 55px 40px;
   margin-top: 50px;
 }
-
-
-/* .contact-section {
-
-} */
 
 .contact-section .form label{
   color: #000;
@@ -671,8 +677,8 @@ header .fixed nav ul li a:hover{
 }
 
 .contact-section.form .input-group{
-  flex: 0 0 80%;
-  max-width: 80%;
+  flex: 0 0 100%;
+  max-width: 100%;
   padding: 0 15px;
   margin-bottom: 30px;
 }
@@ -740,6 +746,12 @@ header .fixed nav ul li a:hover{
   opacity: 0.5;
 }
 
+#dialog{
+  background-color: #fff;
+  overflow: hidden;
+  padding: 30px;
+}
+
 .copyright{
   border-top: 1px solid #c5c5c5;
   padding: 25px 15px;
@@ -798,8 +810,8 @@ header .fixed nav ul li a:hover{
 
 .work-section .work-item,
 .service-section .service-item{
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 @media(max-width: 575px){

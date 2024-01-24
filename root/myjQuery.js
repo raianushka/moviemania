@@ -2,19 +2,22 @@ let index=0;
 
 const totalWorkItems= $(".work-item").length;
 $(document).ready(function(){
- $(window).on("load",function(){
-   $(".preloader").addClass("loaded");
-})
+//  $(window).on("load",function(){
+//    $(".preloader").addClass("loaded");
+// })
 
-$(".nav-toggle").click(function(){
-   $("nav").slideToggle();
-})
 
-$(".header nav a").click(function(){
+$("header nav a").click(function(){
    if($(window).width()<768){
-      $(".header nav").slideToggle();
+      $("header nav").slideToggle();
    }
 })
+
+$('.nav-toggle').click(function() {
+   	$('nav').children('ul').hide().slideDown();
+}, function() {
+	$('nav').children('ul').slideToggle();
+});
 
 //fixed header
 $(window).scroll(function(){
@@ -68,7 +71,7 @@ $("lightbox").click(function(event){
 function lightboxSlideShow(){
    const imgSrc = $(".work-item").eq(index).find("img").attr("data-large");
    const category = $(".work-item").eq(index).find(h4).html();
-   $(".lightbox-img").attr("src",imgSrc);
+   $("lightbox-img").attr("src",imgSrc);
    $(".lightbox-category").html(category)
    $(".lightbox-counter").html(totalWorkItems+"/"+(index+1));
 }
